@@ -1,0 +1,31 @@
+<DOCTYPE html>
+<html>
+<head>
+        <script src="jquery-3.3.1.min.js"></script>
+    <title>Cookie clicker</title>
+    <link rel="icon" type="image/png" href="fallingcookie.png">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="cookie.js">
+</script>
+</head>
+<body>
+    <div>
+        <button id="save" type="button" onclick="save(); savemessage();">Save</button>
+        <button id="load" type="button" onclick="load()">Load</button>
+        <h3 id="savemessage" style="color: white"></h3>
+    </div>
+    <div id="countercontainer">
+        <span id="counter">0</span>
+    </div>
+    <img onclick="count(); grow(); finalscore();" id="maincookie" src="images/maincookie.png">
+    <button type="button" id="btnupgrades">Upgrades</button>
+    <button type="button" id="btnbuildings">Buildings</button>
+    <h3 id="textfinalscore">Final score:</h3>
+    <button type="button" id="reset" onclick="reset()">Reset</button>
+<h3 id="finalscorehtml" style="position: absolute;">0</h3>
+<hr id="hr"/>
+<hr id="hr2"/>
+<hr id="hr3"/>
+<hr id="hr4"/>
+</body>
+</html>
